@@ -8,7 +8,7 @@ terraform {
     storage_account_name  = "lmomessostates"
     container_name        = "tstate"
     key                   = "terraform.tfstate"
-    # key                   = "+alMIMUa4YGQehArEYXLQD8+clSDgFcxDMbZAHflEPTxqDQGyhmsM5rvUHcLdKfALBXjuSeQGqyR+AStrt+YoA=="
+    access_key            = "+alMIMUa4YGQehArEYXLQD8+clSDgFcxDMbZAHflEPTxqDQGyhmsM5rvUHcLdKfALBXjuSeQGqyR+AStrt+YoA=="
 
   }
 
