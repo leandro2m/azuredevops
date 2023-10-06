@@ -23,12 +23,12 @@ stages:
           displayName: tfinstall
           inputs:
             terraformVersion: 'latest'
-        - task: TerraformTaskV4@4
+        - task: TerraformTaskV4@4'
           displayName: init
           inputs:
             provider: 'azurerm'
             command: 'init'
-            backendServiceArm: 'lmomessoTFSPN'
+            backendServiceArm: 'DevOps-Test-Connection'
             backendAzureRmResourceGroupName: '$(bkstrgrg)'
             backendAzureRmStorageAccountName: '$(bkstrg)'
             backendAzureRmContainerName: '$(bkcontainer)'
@@ -53,7 +53,7 @@ stages:
           inputs:
             provider: 'azurerm'
             command: 'init'
-            backendServiceArm: 'lmomessoTFSPN'
+            backendServiceArm: 'DevOps-Test-Connection'
             backendAzureRmResourceGroupName: '$(bkstrgrg)'
             backendAzureRmStorageAccountName: '$(bkstrg)'
             backendAzureRmContainerName: '$(bkcontainer)'
@@ -63,13 +63,13 @@ stages:
           inputs:
             provider: 'azurerm'
             command: 'plan'
-            environmentServiceNameAzureRM: 'lmomessoTFSPN'
+            environmentServiceNameAzureRM: 'DevOps-Test-Connection'
         - task: TerraformTaskV4@4
           displayName: apply
           inputs:
             provider: 'azurerm'
             command: 'apply'
-            environmentServiceNameAzureRM: 'lmomessoTFSPN'
+            environmentServiceNameAzureRM: 'DevOps-Test-Connection'
 
         
           
