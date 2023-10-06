@@ -9,7 +9,7 @@ terraform {
     container_name        = "tstate"
     # key                   = "+alMIMUa4YGQehArEYXLQD8+clSDgFcxDMbZAHflEPTxqDQGyhmsM5rvUHcLdKfALBXjuSeQGqyR+AStrt+YoA=="
     key                   = "terraform.tfstate"
-    access_key            = "__token__"
+
   }
 
 }
