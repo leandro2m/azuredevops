@@ -11,7 +11,7 @@ pool:
 variables:
  bkstrgrg: 'lmomessoDevops'
  bkstrg: 'lmomessostates'
- bkcontainer: tstate'
+ bkcontainer: tstate
 
 stages:
   - stage: tfvalidate
