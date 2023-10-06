@@ -23,7 +23,7 @@ stages:
           displayName: tfinstall
           inputs:
             terraformVersion: 'latest'
-        - task: TerraformTaskV4@4'
+        - task: TerraformTaskV4@5
           displayName: init
           inputs:
             provider: 'azurerm'
